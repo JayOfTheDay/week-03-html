@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Bio + Contact Form</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Site</h1>
+    <nav>
+      <a href="bio.html">Bio</a> |
+      <a href="../week-02-homework/projects.html">Projects</a> |
+      <a href="../week-02-homework/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <img src="placeholder.jpg" alt="Portrait of me" style="width:200px; height:auto;">
+      <ul>
+        <li>About Me</li>
+        <li>My Interests</li>
+        <li>Future Goals</li>
+      </ul>
+      <p>Visit my <a href="../week-02-homework/projects.html">Projects</a> page to see what I’ve built.</p>
+      <table border="1">
+        <tr><th>Year</th><th>Highlight</th></tr>
+        <tr><td>2024</td><td>Started coding</td></tr>
+        <tr><td>2025</td><td>Built first website</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required minlength="2"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="topic">Topic:</label>
+        <select id="topic" name="topic" required>
+          <option value="">--Select a topic--</option>
+          <option value="projects">Projects</option>
+          <option value="collaboration">Collaboration</option>
+          <option value="general">General Inquiry</option>
+        </select><br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required minlength="10"></textarea><br><br>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Accessible Bio Page</p>
+  </footer>
+</body>
+</html>
